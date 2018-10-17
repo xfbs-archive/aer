@@ -1,11 +1,12 @@
 # Architekturen und Entwurf von Rechnersystemen
 
-*Course taught at the Technical University of Darmstadt*
+*Course taught at the Technical University of Darmstadt.*
 
 ## Übersicht
 
 *   Credits: 5 CP
 *   Dozent: Andreas Koch
+*   Betreuer: Jaco Hofmann
 *   Vorlesung: Mittwochs 13:30–15:10 in S1|01 A01 und Donnerstags 16:15–17:55 in S105|122.
 *   Prüfungsart: Klausur, vorraussichtlich am 25.2.2019.
 *   Links: [Moodle](https://moodle.informatik.tu-darmstadt.de/course/view.php?id=476), [Veranstaltungswebseite](https://www.esa.informatik.tu-darmstadt.de/twiki/bin/view/Lectures/AERWS18De.html).
@@ -27,41 +28,42 @@ Diese Veranstaltung wird aufgezeichnet.
 
 ## Vorlesungen
 
-*   2018-10-17
+*   2018-10-17. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181017.avi)
+    *   Organistatorisches
 
 ## Folien
 
-*   [Intro Basic](folien/intro_basics-handout.pdf)
-    *   Organisatorisches
-    *   Einführung der Mikroeletronik
-    *   Hardware-Entwurfstechniken
-    *   Fundamentale Entwurfsmethoden
-    *   Verfeinerter Ablauf der Synthese
-    *   Verifikation
-    *   Synthesebeispiel
-    *   Rekonfigurierbare System-on-Chips
-*   [Bluespec](folien/bsv.pdf)
-    *   Einführung
-    *   BSV Werkzeugfluß
-    *   Syntaxbeispiele
-    *   Bedienung
-    *   Grundlegende Syntaxelemente
-    *   Ausführungssemantik
-    *   Parallelität und Nebenläufigkeit
-    *   Datentyp `Maybe`
-    *   Mehr Nebenläufigkeit
-    *   Von BSV zu Verilog
-*   [Xilinx Zync System-on-Chip](folien/zynq-soc2.pdf)
-    *   XILINX ZYNQ 7000 RSOC
-    *   ARM Cortex-A9 Prozessorkern
-    *   APU On-Chip Memory (OCM)
-    *   Programmierbare Logik (FPGA)
-    *   Hard Core vs. Soft Cores
-    *   SCHNITTSTELLEN ZWISCHEN PROZESSOR UND FPGA
-    *   HP vs ACP
-    *   ARM AMBA AXI4
-    *   IP BLÖCKE UND HIGH-LEVEL SYNTHESE
-*   [TAPASCO](folien/tapasco-handout.pdf)
+[Intro Basic](folien/intro_basics-handout.pdf)
+*   Organisatorisches
+*   Einführung der Mikroeletronik
+*   Hardware-Entwurfstechniken
+*   Fundamentale Entwurfsmethoden
+*   Verfeinerter Ablauf der Synthese
+*   Verifikation
+*   Synthesebeispiel
+*   Rekonfigurierbare System-on-Chips
+[Bluespec](folien/bsv.pdf)
+*   Einführung
+*   BSV Werkzeugfluß
+*   Syntaxbeispiele
+*   Bedienung
+*   Grundlegende Syntaxelemente
+*   Ausführungssemantik
+*   Parallelität und Nebenläufigkeit
+*   Datentyp `Maybe`
+*   Mehr Nebenläufigkeit
+*   Von BSV zu Verilog
+[Xilinx Zync System-on-Chip](folien/zynq-soc2.pdf)
+*   XILINX ZYNQ 7000 RSOC
+*   ARM Cortex-A9 Prozessorkern
+*   APU On-Chip Memory (OCM)
+*   Programmierbare Logik (FPGA)
+*   Hard Core vs. Soft Cores
+*   SCHNITTSTELLEN ZWISCHEN PROZESSOR UND FPGA
+*   HP vs ACP
+*   ARM AMBA AXI4
+*   IP BLÖCKE UND HIGH-LEVEL SYNTHESE
+[TAPASCO](folien/tapasco-handout.pdf)
 
 ## Übungsblätter
 
@@ -76,4 +78,7 @@ Diese Veranstaltung wird aufgezeichnet.
 
 ## Materialien
 
-TBA.
+*   D. M. Harris und S. L. Harris: *Digital Design and Computer Architecture, 2. Ed*, MKP, 2012.
+*   Bluespec Online-Dokumentation der RBG unter `/usr/local/bluespec/doc/BSV`.
+*   Einführungsbuch *Bluespec by Example*.
+*   L. Crockett, R. Elliot, Martin Enderwitz, Bob Stewart und D. Northcote: *The Zync Book*, Strathclyde Academic Media, 2014. Frei verfügbar auf <http://www.zyncbook.com/>.
