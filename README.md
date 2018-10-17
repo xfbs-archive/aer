@@ -12,7 +12,7 @@
 *   Links: [Moodle](https://moodle.informatik.tu-darmstadt.de/course/view.php?id=476), [Veranstaltungswebseite](https://www.esa.informatik.tu-darmstadt.de/twiki/bin/view/Lectures/AERWS18De.html).
 *   Notizen zur Vorlesung: *work-in-progress*.
 
-Diese Veranstaltung wird aufgezeichnet.
+Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig. 
 
 ## Inhalt
 
@@ -30,6 +30,8 @@ Diese Veranstaltung wird aufgezeichnet.
 
 *   2018-10-17. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181017.avi)
     *   Organistatorisches
+    *   Multiplier in Bluespec
+    *   Bluespec-Programme kompilieren und simulieren.
 
 ## Folien
 
