@@ -1,0 +1,226 @@
+\documentclass[ngerman]{scrartcl}
+\usepackage{babel}
+\usepackage{csquotes}
+
+% typography
+\usepackage{fontspec}
+\setmainfont{Open Sans}[
+  BoldFont={Open Sans Bold},
+  ItalicFont={Open Sans Italic}]
+\setsansfont{Open Sans}[
+  BoldFont={Open Sans Bold},
+  ItalicFont={Open Sans Italic}]
+\setmonofont{Menlo}
+\usepackage[factor=2000]{microtype}
+
+% graphics, drawings, etc.
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.arrows}
+\newtcolorbox{anmerkung}{%
+  grow to left by=10pt,
+  colback=black!10,
+  colframe=white,
+  coltitle=black,
+  borderline west={4pt}{0pt}{black!30},
+  boxrule=0pt,
+  boxsep=0pt,
+  %breakable,
+  enhanced jigsaw,
+  title={Anmerkung\par},
+  fonttitle={\bfseries},
+  attach title to upper={}}
+
+% highlighting, lists, code
+\usepackage{soul}
+\usepackage{enumitem}
+\usepackage{listings}
+\lstset{
+  morekeywords={interface},
+  basicstyle=\ttfamily,
+  escapeinside=||,
+  keywordstyle=\color{blue!50!black},
+  stringstyle=\color{green!50!black}}
+
+% nice tables
+\usepackage{booktabs}
+\newcommand{\tablespacing}[1]{\renewcommand{\arraystretch}{#1}}
+
+% links
+\usepackage[
+  colorlinks,
+  linkcolor={red!50!black},
+  citecolor={blue!50!black},
+  urlcolor={blue!80!black}
+]{hyperref}
+
+\title{Architekturen und Organisation von Rechensystemen}
+\date{Wintersemester 2018-2019}
+\author{Andreas Koch}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Einführung in Bluespec}
+
+Bluespec ist eine Hardwarebeschreibungssprache, mit der sowohl das \emph{Verhalten} von Hardware (was soll eine Struktur tun?), als auch deren \emph{Struktur} (wie soll es aufgebaut sein?) beschrieben werden kann. 
+
+\subsection{Verhaltensbeschreibung}
+
+Bluespec nutzt \emph{atomare Transaktionen}, um parallele Abläufe zu Formulieren. Tabelle~\ref{tbl:bsvvergleich} zeigt die Unterschiede zu anderen Systemen.
+
+\subsection{Strukturbeschreibung}
+
+Die Strukturbeschreibung ist angelehnt an die mächtige Programmiersprache Haskell. Dadurch hat es ein ausdrucksstarkes Typsystem, strenge Typprüfung und eine mächtige Parametrisierung. Tabelle~\ref{tbl:bsvvergleich} zeigt die Unterschiede zu anderen Systemen. Bluespec erlaubt es, eigene Typen zu definieren und zu benutzen, und das mächtige Typensystem kann diese Prüfen.
+
+\begin{table}\small\centering\tablespacing{1.3}
+\begin{tabular}{@{}p{2.5cm}p{3cm}p{4cm}p{4cm}@{}}
+\toprule
+\textbf{Verhaltens\-beschreibung, Struktur} & \textbf{Bluespec} & \textbf{Synthetisierbare RTL HDL} & \textbf{High-Level Synthese}\\
+\midrule 
+Verhalten & Atomare Regeln & Synchrone Schaltungen & Sequentielle Programmierung.\\
+Schnittstellen & Atomare Methoden & Im wesentlichen Drähte & In der Regel nur auf oberster Hierarchieebene.\\
+Einfluss auf Architektur & Stark & Stark & Schwach\\
+Typprüfungen & Stark & Schwach bis Mittel (VHDL)\\
+Typen & Mächtig, auch benutzerdefiniert & Bits, schwach benutzerdefiniert & Mittel\\
+Parametrisierung & Mächtig & Schwach & Schwach\\
+\bottomrule
+\end{tabular}
+\caption{Vergleich vom Hardware-Beschreibungssprache}\label{tbl:bsvvergleich}
+\end{table}
+
+\subsection{Workflow}
+
+Wie funktioniert eigentlich der Workflow von Bluespec-Projekten? Der Bluespec Quelltext beinhaltet sowohl die Beschreibung als auch Tests. Der Bluespec-Compiler kann ein Projekt nativ kompilieren, um es mit Bluesim oder dem SystemC Plugin ausführen zu können. Ebenso kann der Code in eine andere \emph{Register Transfer Language}, beispielsweise Verilog, übersetzt werden. Der Verilog-Code kann dann ebenso zur Simulation, oder aber zur FPGA bzw. ASIC-Synthese genutzt werden. 
+
+Ein Vorteil davon, dass der Bluespec-Compiler den Code nativ mit Bluesim simulieren kann ist, dass die Simulationsgeschwindigkeit wesentlich schneller ist, als generierten Verilog-Code zu simulieren. 
+
+% TODO graphic
+
+\subsection{Weitere Informationen}
+
+Es gibt, als Teil der Bluespec-Distribution, sowohl Englische Folien, als auch eine Sprachspezifikation, ein Benutzerhandbuch und das Buch \emph{Bluespec by Example} inklusive Beispiele.
+
+\subsection{Multiplikation}
+
+Jetzt schauen wir uns Bluespec anhand eines Beispiels an.
+
+\begin{lstlisting}[language=verilog]
+interface Mult_ifc;
+    method Action               put_x (int xx);
+    method Action               put_y (int yy);
+    method ActionValue #(int)   get_w ();
+endinterface: Mult_ifc
+\end{lstlisting}
+
+Hier haben wir ein neues Interface definiert, welches wir \verb|Mult_ifc| genannt haben. Dieses Interface besitzt drei Methoden. Die Methoden \verb|put_x| und \verb|put_y| nehmen jeweils einen Integer und setzen die Multiplikanden (denn das sind \emph{Action}-Methoden), und die Methode \verb|get_w|, die das Ergebnis der Multiplikation nach Außen liefert (denn es ist eine \emph{ActionValue}-Methode). 
+\begin{lstlisting}
+module mkTestbench (Empty);
+    Mult_ifc m <- mkMult;
+    
+    rule gen_x;
+        m.put_x (9);
+    endrule
+    
+    rule gen_y;
+        m.put_y (5);
+    endrule
+    
+    rule drain;
+        let w <- m.get_w ();
+        $display ("Product = %d", w);
+        $finish ();
+    endrule
+endmodule: mkTestbench  
+\end{lstlisting}
+Hier haben wir eine Testbench. Dieser Testrahmen wird mit dem Namen \verb|mkTestbench| definiert, wobei \verb|mk| ein Präfix ist, der bei Bluespec-Projekten generell immer für module benutzt wird. Diese Testbench bekommt einen Multiplier, und sie hat Regeln, die den Multiplier mit Input versorgen und den Output auslesen. 
+
+Bei Bluespec müssen alle Ausdrücke (Expressions) in solchen \emph{Rules}, also Regeln, stehen. Wenn nichts anderes angegeben wird, dann werden diese Regeln parallel ausgeführt.
+\begin{lstlisting}
+module mkMult (Mult_ifc);
+    Reg #(int)  w     <- mkRegU;
+    Reg #(int)  x     <- mkRegU;
+    Reg #(int)  y     <- mkRegU;
+    Reg #(Bool) got_x <- mkReg (False);
+    Reg #(Bool) got_y <- mkReg (False);
+    
+    rule compute ((y != 0) && got_x && got_y);
+        if (lsb(y) == 1) w <= w + x;
+        x <= x << 1;
+        y <= y >> 1;
+    endrule
+    
+    method Action put_x (int xx) if (! got_x);
+        x <= xx; w <= 0; got_x <= True;
+    endmethod
+    
+    method Action put_y (int yy) if (! got_y);
+        x <= xx; w <= 0; got_x <= True;
+    endmethod
+    
+    method ActionValue #(int) get_w () if ((y == 0) && got_x && got_y);
+        got_x <= False; got_y <= False;
+        return w;
+    endmethod
+endmodule: mkMult  
+\end{lstlisting}
+Hier haben wir jetzt das Modul definiert, welches die Multiplikation ausführt. Wie auch die Testbench haben wir dem Module einen Namen mit dem Präfix \verb|mk| gegeben. Außerdem haben wir angedeutet, dass es das Interface \verb|Mult_ifc| implementiert. Wir können sehen dass das Module mehrere Register besitzt. Die ersten drei Register, \verb|w|, \verb|x| und \verb|y|, sind alles \verb|RegU|, was \emph{Uninitialized Register} bedeutet, diese haben also keinen Startwert. Anders bei \verb|got_x| und \verb|got_y|, diese sind beide Booleans mit dem Startwert \emph{False}.
+
+% TODO further explanation.
+
+\subsection{Bluespec Praxis}
+
+Um dieses Module praktisch auszuprobieren, organisiert man das Ganz typischerweise in zwei Dateien auf. In die erste Datei, die die Testbench beinhaltet, nennt man \verb|Testbench.bsv| und fügt ein paar Zeilen hinzu. Dabei steht die Endung \verb|.bsv| für \emph{Bluespec SystemVerilog}, denn Bluespec hatte ursprünglich einen Haskell-Syntax, welcher aber nicht wirklich gut angenommen wurde, und man deswegen schlussendlich zu einen SystemVerilog-ähnlichen Syntax gewechselt hat.
+\begin{lstlisting}
+package Testbench;
+import Mult::*;
+
+module mkTestbench (Empty);
+    ...
+endmodule: mkTestbench
+endpackage: Testbench  
+\end{lstlisting}
+Hiermit definiert man ein Package namens \emph{Testbench}, in welche man das Modul \verb|mkTestbench| hineinpackt. Dies ist ähnlich wie Namespaces in C++, zum Beispiel. Außerden kann man mit der \verb|import|-Anweisung ein anderes Package importieten. Hier importieren wir das Package names \emph{Mult}. Damit können wir auch gleich die andere Datei, die wir \verb|Mult.bsv| nennen, 
+
+\subsection{Bluespec Ausführung}
+
+Wie kann man Bluespec-Code denn jetzt eigentlich ausführen? Das geht relativ leicht, aber nur auf den RBG-Rechnern, da Bluespec kommerziell und Closed-Source ist. Dazu muss man einmal die RBG-Lizenz initialisieren.
+\begin{lstlisting}
+$ export LM_LICENSE_FILE=27002@license.rbg.informatik.tu-darmst|\dots|
+\end{lstlisting}
+Sobald das erledigt ist, kann man den Bluespec-Compiler ausführen. 
+\begin{lstlisting}
+$ bsc -sim -g mkTestbench -u Testbench.bsv  
+\end{lstlisting}
+Die Optionen hier teilen dem Compiler mit, dass er Code für den internen Simulator erzeugen soll (\verb|-sim|), dass das oberste Module \verb|mkTestbench| ist, und dass er auch Untermodule übersetzen soll. Der Bluespec-Compiler geht davon aus, dass jedes Package in einer Datei mit dem Packagenamen existiert.
+Bevor man den Code jetzt simulieren kann, muss diese erstmal gelinked werden. Dazu nutzt man ebenso den Bluespec-Compiler, aber mit anderen Optionen.
+\begin{lstlisting}
+$ bsc -sim -e mkTestbench -o myFirstModel  
+\end{lstlisting}
+Hierbei muss man dem Compiler mitteilen, dass man an einer Simulation interessiert ist mit dem Parameter \verb|-sim|, den Einsprungpunkt des Moduls mit dem Parameter \verb|-e| bestimmen (in diesem Fall \verb|mkTestbench|) und den Dateinamen, in dem das Simulationsprogramm geschrieben werden soll. Hier generiert Bluespec Maschinencode. Um die Simulation dann zu started, muss einfach das resultierende Programm ausgeführt werden. 
+\begin{lstlisting}
+$ ./myFirstModel
+Produkt =           45  
+\end{lstlisting}
+Wichtig ist hier, dass in der \verb|mkTestbench| die Anweisung \verb|$finish();| vorkommt, ansonsten hält die Simulation nicht an. Der Kompilationsprozess kann mit einer \verb|Makefile| automatisiert werden, oder man kann die Bluespec IDE benutzen, die in der Vorlesung aber nicht benutzt wird.
+
+\begin{anmerkung}
+Professionelle Programmierer, die mit Vim arbeiten, können sich ein Vim-Plugin herunterladen, mit dem man Syntax-Highlighting und Auto-Indentation bekommt. Das macht das Arbeiten mit dem Code wesentlich angenehmer\footnotemark.
+\end{anmerkung}
+\footnotetext{Siehe \url{https://github.com/mtikekar/vim-bsv}.}
+
+% 1:13 erste Aufzeichnung.
+
+\end{document}
+
+
+
+
+
+
+
