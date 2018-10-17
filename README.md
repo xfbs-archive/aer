@@ -6,7 +6,7 @@
 
 *   Credits: 5 CP
 *   Dozent: Andreas Koch
-*   Vorlesung: Mittwochs 13:30--15:10 in S1|01 A01 und Donnerstags 16:15--17:55 in S105|122.
+*   Vorlesung: Mittwochs 13:30–15:10 in S1|01 A01 und Donnerstags 16:15–17:55 in S105|122.
 *   Prüfungsart: Klausur, vorraussichtlich am 25.2.2019.
 *   Links: [Moodle](https://moodle.informatik.tu-darmstadt.de/course/view.php?id=476), [Veranstaltungswebseite](https://www.esa.informatik.tu-darmstadt.de/twiki/bin/view/Lectures/AERWS18De.html).
 *   Notizen zur Vorlesung: *work-in-progress*.
