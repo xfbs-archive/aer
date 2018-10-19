@@ -16,10 +16,10 @@ Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig.
 
 ## Nützliches
 
-*   [Bluespec Reference Card](materials/BSV_ref_card.pdf)
-*   [Bluespec by Example](materials/bsv_by_example.pdf)
-*   [Bluespec Reference Guide](materials/reference-guide.pdf)
-*   [Bluespec User Guide](materials/user-guide.pdf)
+*   [Bluespec Reference Card](material/BSV_ref_card.pdf)
+*   [Bluespec by Example](material/bsv_by_example.pdf)
+*   [Bluespec Reference Guide](material/reference-guide.pdf)
+*   [Bluespec User Guide](material/user-guide.pdf)
 *   [RBG Zugang](tutorials/rbg.md)
 *   [Vim einrichten für Bluespec](tutorials/vim.md)
 
