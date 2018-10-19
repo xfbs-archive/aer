@@ -77,6 +77,10 @@ Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig.
 *   [Übungsblatt 6](uebungen/ueb06_no_lsg.pdf): Weiterführung von Übungsblatt 5
 *   [Übungsblatt 7](uebungen/ueb07_no_lsg.pdf): Weiterführung von Übungsblatt 6
 
+## Tutorials
+
+*   [RBG Zugang](tutorials/rbg.md)
+*   [Vim einrichten für Bluespec](tutorials/vim.md)
 
 ## Materialien
 

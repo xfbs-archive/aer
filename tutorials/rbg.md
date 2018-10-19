@@ -46,7 +46,7 @@ Wir können also sehen, dass hier ein `ü` als `0xFC` encoded wurde, und ein `ä
 | `ü` (`=FC`) | `C3 BC` | `FC` |
 | `ä` (`=E4`) | `C3 A4` | `E4` |
 
-Wenn man sich die Tabelle ansieht, erkennt man, dass hier ein falsches Encoding verwendet wurde (bzw. ein Encoding falsch angegeben wurde). Fail! Ich glaube, da muss der RBG nochmal dran.
+Wenn man sich die Tabelle ansieht, erkennt man, dass hier ein falsches Encoding verwendet wurde (bzw. ein Encoding falsch angegeben wurde). Fail! Ich denke, da muss der RBG nochmal dran.
 
 ## Per SSH einloggen
 

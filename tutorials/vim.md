@@ -1,5 +1,7 @@
 # Vim einrichten für Bluespec
 
+[![asciicast](https://asciinema.org/a/O4UQ9stft1G0QagvCsOM7taKv.png)](https://asciinema.org/a/O4UQ9stft1G0QagvCsOM7taKv)
+
 Es ist natürlich ziemlich doof, wenn man kein Syntax-Highlighting hat beim Programmieren. Es ist zwar nicht unbeding notwendig, aber es fühlt sich einfach besser an. Zum Glück gibt es *den einen Editor*, der für alles Plugins hat. Ich rede natürlich über Vim. 
 
 Aber wie richtet man das eigentlich ein, zum Beispiel auf dem RBG-Pool? Das geht relativ einfach, in drei Schritten. 
@@ -18,6 +20,4 @@ Aber wie richtet man das eigentlich ein, zum Beispiel auf dem RBG-Pool? Das geht
 
     git clone https://github.com/mtikekar/vim-bsv ~/.vim/bundle/vim-bsv
 
-Fertig! Hier noch ein Video:
-
-[![asciicast](https://asciinema.org/a/O4UQ9stft1G0QagvCsOM7taKv.png)](https://asciinema.org/a/O4UQ9stft1G0QagvCsOM7taKv)
+Fertig!
