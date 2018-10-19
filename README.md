@@ -35,37 +35,37 @@ Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig.
 
 ## Folien
 
-[Intro Basic](folien/intro_basics-handout.pdf)
-*   Organisatorisches
-*   Einführung der Mikroeletronik
-*   Hardware-Entwurfstechniken
-*   Fundamentale Entwurfsmethoden
-*   Verfeinerter Ablauf der Synthese
-*   Verifikation
-*   Synthesebeispiel
-*   Rekonfigurierbare System-on-Chips
-[Bluespec](folien/bsv.pdf)
-*   Einführung
-*   BSV Werkzeugfluß
-*   Syntaxbeispiele
-*   Bedienung
-*   Grundlegende Syntaxelemente
-*   Ausführungssemantik
-*   Parallelität und Nebenläufigkeit
-*   Datentyp `Maybe`
-*   Mehr Nebenläufigkeit
-*   Von BSV zu Verilog
-[Xilinx Zync System-on-Chip](folien/zynq-soc2.pdf)
-*   XILINX ZYNQ 7000 RSOC
-*   ARM Cortex-A9 Prozessorkern
-*   APU On-Chip Memory (OCM)
-*   Programmierbare Logik (FPGA)
-*   Hard Core vs. Soft Cores
-*   SCHNITTSTELLEN ZWISCHEN PROZESSOR UND FPGA
-*   HP vs ACP
-*   ARM AMBA AXI4
-*   IP BLÖCKE UND HIGH-LEVEL SYNTHESE
-[TAPASCO](folien/tapasco-handout.pdf)
+*   [Intro Basic](folien/intro_basics-handout.pdf)
+    *   Organisatorisches
+    *   Einführung der Mikroeletronik
+    *   Hardware-Entwurfstechniken
+    *   Fundamentale Entwurfsmethoden
+    *   Verfeinerter Ablauf der Synthese
+    *   Verifikation
+    *   Synthesebeispiel
+    *   Rekonfigurierbare System-on-Chips
+*   [Bluespec](folien/bsv.pdf)
+    *   Einführung
+    *   BSV Werkzeugfluß
+    *   Syntaxbeispiele
+    *   Bedienung
+    *   Grundlegende Syntaxelemente
+    *   Ausführungssemantik
+    *   Parallelität und Nebenläufigkeit
+    *   Datentyp `Maybe`
+    *   Mehr Nebenläufigkeit
+    *   Von BSV zu Verilog
+*   [Xilinx Zync System-on-Chip](folien/zynq-soc2.pdf)
+    *   XILINX ZYNQ 7000 RSOC
+    *   ARM Cortex-A9 Prozessorkern
+    *   APU On-Chip Memory (OCM)
+    *   Programmierbare Logik (FPGA)
+    *   Hard Core vs. Soft Cores
+    *   SCHNITTSTELLEN ZWISCHEN PROZESSOR UND FPGA
+    *   HP vs ACP
+    *   ARM AMBA AXI4
+    *   IP BLÖCKE UND HIGH-LEVEL SYNTHESE
+*   [TAPASCO](folien/tapasco-handout.pdf)
 
 ## Übungsblätter
 
