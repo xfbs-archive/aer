@@ -14,6 +14,15 @@
 
 Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig. 
 
+## Nützliches
+
+*   [Bluespec Reference Card](materials/BSV_ref_card.pdf)
+*   [Bluespec by Example](materials/bsv_by_example.pdf)
+*   [Bluespec Reference Guide](materials/reference-guide.pdf)
+*   [Bluespec User Guide](materials/user-guide.pdf)
+*   [RBG Zugang](tutorials/rbg.md)
+*   [Vim einrichten für Bluespec](tutorials/vim.md)
+
 ## Inhalt
 
 *   Technologische Grundlagen und Trends der Mikroelektronik
@@ -76,11 +85,6 @@ Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig.
 *   [Übungsblatt 5](uebungen/ueb05_no_lsg.pdf): Weiterführung von Übungsblatt 4
 *   [Übungsblatt 6](uebungen/ueb06_no_lsg.pdf): Weiterführung von Übungsblatt 5
 *   [Übungsblatt 7](uebungen/ueb07_no_lsg.pdf): Weiterführung von Übungsblatt 6
-
-## Tutorials
-
-*   [RBG Zugang](tutorials/rbg.md)
-*   [Vim einrichten für Bluespec](tutorials/vim.md)
 
 ## Materialien
 
