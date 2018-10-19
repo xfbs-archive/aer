@@ -4,7 +4,7 @@ Da Bluespec leider nur im RBG-Pool installiert ist, muss man, zum Experimentiere
 
 ## SSH-Key generieren
 
-
+    $ ssh-keygen
 
 ## SSH-Key hochladen
 
@@ -23,3 +23,5 @@ Diese Mail enthält einen Link, auf den man gehen muss. Dort kann man dann seine
 ## Per SSH einloggen
 
 Hat man alles richtig gemacht, kann man sich nun per SSH einloggen.
+
+[![asciicast](https://asciinema.org/a/4LZPxrkGcO7pYXHsdZpkaVw9I.png)](https://asciinema.org/a/4LZPxrkGcO7pYXHsdZpkaVw9I)
