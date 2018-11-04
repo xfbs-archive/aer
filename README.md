@@ -88,6 +88,13 @@ Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig.
 *   [Übungsblatt 6](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16079): Filter mit Daten versorgen.
 *   [Übungsblatt 7](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16080): Filter mit echten Bilddaten testen ([Hilfsmittel](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16081)).
 
+## Folien
+
+*   Organisatorisches und Themen des Hardware-Entwurfs. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16069).
+*   Bluespec SystemVerilog. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16070).
+*   Systems-on-Chip. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16071).
+*   Rekonfigurierbares Rechnen und TaPasCo. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16072).
+
 ## Materialien
 
 *   D. M. Harris und S. L. Harris: *Digital Design and Computer Architecture, 2. Ed*, MKP, 2012.
