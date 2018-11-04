@@ -44,7 +44,6 @@ Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig.
 *   2018-10-31. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181031.mp4)
 *   2018-11-01. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181101.mp4)
 
-
 ## Folien
 
 *   [Intro Basic](folien/intro_basics-handout.pdf)
@@ -81,13 +80,13 @@ Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig.
 
 ## Übungsblätter
 
-*   [Übungsblatt 1](uebungen/ueb01_no_lsg.pdf): Einführung in grundlegende Bluespec-Sprachkonzepte.
-*   [Übungsblatt 2](uebungen/ueb02_no_lsg.pdf): Finite-State-Machines in Bluespec.
-*   [Übungsblatt 3](uebungen/ueb03_no_lsg.pdf): Verwendung von BlueCheck zum testen von Bluespec-Modulen. 
-*   [Übungsblatt 4](uebungen/ueb04_no_lsg.pdf): Vorteil von Berechnungen auf Hardwarebeschleunigern.
-*   [Übungsblatt 5](uebungen/ueb05_no_lsg.pdf): Weiterführung von Übungsblatt 4
-*   [Übungsblatt 6](uebungen/ueb06_no_lsg.pdf): Weiterführung von Übungsblatt 5
-*   [Übungsblatt 7](uebungen/ueb07_no_lsg.pdf): Weiterführung von Übungsblatt 6
+*   [Übungsblatt 1](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16074): Einführung in grundlegende Bluespec-Sprachkonzepte.
+*   [Übungsblatt 2](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16075): Finite-State-Machines in Bluespec.
+*   [Übungsblatt 3](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16076): Verwendung von BlueCheck zum testen von Bluespec-Modulen.
+*   [Übungsblatt 4](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16077): Vorteil von Berechnungen auf Hardwarebeschleunigern.
+*   [Übungsblatt 5](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16078): Filter aus Vergleichern aufbauen.
+*   [Übungsblatt 6](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16079): Filter mit Daten versorgen.
+*   [Übungsblatt 7](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16080): Filter mit echten Bilddaten testen ([Hilfsmittel](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16081)).
 
 ## Materialien
 
