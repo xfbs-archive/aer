@@ -46,37 +46,10 @@ Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig.
 
 ## Folien
 
-*   [Intro Basic](folien/intro_basics-handout.pdf)
-    *   Organisatorisches
-    *   Einführung der Mikroeletronik
-    *   Hardware-Entwurfstechniken
-    *   Fundamentale Entwurfsmethoden
-    *   Verfeinerter Ablauf der Synthese
-    *   Verifikation
-    *   Synthesebeispiel
-    *   Rekonfigurierbare System-on-Chips
-*   [Bluespec](folien/bsv.pdf)
-    *   Einführung
-    *   BSV Werkzeugfluß
-    *   Syntaxbeispiele
-    *   Bedienung
-    *   Grundlegende Syntaxelemente
-    *   Ausführungssemantik
-    *   Parallelität und Nebenläufigkeit
-    *   Datentyp `Maybe`
-    *   Mehr Nebenläufigkeit
-    *   Von BSV zu Verilog
-*   [Xilinx Zync System-on-Chip](folien/zynq-soc2.pdf)
-    *   XILINX ZYNQ 7000 RSOC
-    *   ARM Cortex-A9 Prozessorkern
-    *   APU On-Chip Memory (OCM)
-    *   Programmierbare Logik (FPGA)
-    *   Hard Core vs. Soft Cores
-    *   SCHNITTSTELLEN ZWISCHEN PROZESSOR UND FPGA
-    *   HP vs ACP
-    *   ARM AMBA AXI4
-    *   IP BLÖCKE UND HIGH-LEVEL SYNTHESE
-*   [TAPASCO](folien/tapasco-handout.pdf)
+*   Organisatorisches und Themen des Hardware-Entwurfs. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16069).
+*   Bluespec SystemVerilog. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16070).
+*   Systems-on-Chip. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16071).
+*   Rekonfigurierbares Rechnen und TaPasCo. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16072).
 
 ## Übungsblätter
 
@@ -87,13 +60,6 @@ Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig.
 *   [Übungsblatt 5](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16078): Filter aus Vergleichern aufbauen.
 *   [Übungsblatt 6](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16079): Filter mit Daten versorgen.
 *   [Übungsblatt 7](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16080): Filter mit echten Bilddaten testen ([Hilfsmittel](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16081)).
-
-## Folien
-
-*   Organisatorisches und Themen des Hardware-Entwurfs. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16069).
-*   Bluespec SystemVerilog. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16070).
-*   Systems-on-Chip. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16071).
-*   Rekonfigurierbares Rechnen und TaPasCo. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16072).
 
 ## Materialien
 
