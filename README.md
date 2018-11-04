@@ -25,15 +25,7 @@ Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig.
 
 ## Inhalt
 
-*   Technologische Grundlagen und Trends der Mikroelektronik
-*   Entwurfsflüsse für mikroelektronische Systeme
-*   Beschreibung von Hardware-Systemen
-*   Charakteristika von Rechnersystemen
-*   Architekturen für parallele Ausführung
-*   Speichersysteme
-*   Heterogene Systems-on-Chip
-*   On-Chip und Off-Chip Kommunikationsstrukturen
-*   Aufbau eingebetteter Systeme, z.B. im Umfeld von Cyber-Physical Systems
+Technologische Grundlagen und Trends der Mikroelektronik. Entwurfsflüsse für mikroelektronische Systeme. Beschreibung von Hardware-Systemen. Charakteristika von Rechnersystemen. Architekturen für parallele Ausführung. Speichersysteme. Heterogene Systems-on-Chip. On-Chip und Off-Chip Kommunikationsstrukturen. Aufbau eingebetteter Systeme, z.B. im Umfeld von Cyber-Physical Systems.
 
 ## Vorlesungen
 
