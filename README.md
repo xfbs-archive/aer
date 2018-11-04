@@ -12,7 +12,7 @@
 *   Links: [Moodle](https://moodle.informatik.tu-darmstadt.de/course/view.php?id=476), [Veranstaltungswebseite](https://www.esa.informatik.tu-darmstadt.de/twiki/bin/view/Lectures/AERWS18De.html).
 *   Notizen zur Vorlesung: [PDF](notizen.pdf) (*work-in-progress*).
 
-Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig. 
+Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig und werden nicht abgegeben.
 
 ## Nützliches
 
