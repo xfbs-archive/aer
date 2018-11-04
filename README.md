@@ -29,19 +29,14 @@ Technologische Grundlagen und Trends der Mikroelektronik. Entwurfsflüsse für m
 
 ## Vorlesungen
 
-*   2018-10-17. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181017.avi)
-*   2018-10-18. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181018.avi)
-*   2018-10-24. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181024.mp4)
-*   2018-10-25. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181025.mp4)
-*   2018-10-31. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181031.mp4)
-*   2018-11-01. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181101.mp4)
-
-## Folien
-
-*   Organisatorisches und Themen des Hardware-Entwurfs. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16069).
-*   Bluespec SystemVerilog. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16070).
-*   Systems-on-Chip. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16071).
-*   Rekonfigurierbares Rechnen und TaPasCo. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16072).
+*   2018-10-17. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181017.avi). Folien: [Organisatorisches und Themen des Hardware-Entwurfs](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16069).
+*   2018-10-18. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181018.avi). Folien: [Bluespec SystemVerilog](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16070).
+*   2018-10-24. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181024.mp4).
+*   2018-10-25. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181025.mp4).
+*   2018-10-31. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181031.mp4).
+*   2018-11-01. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181101.mp4).
+*   Folien: Systems-on-Chip. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16071).
+*   Folien: Rekonfigurierbares Rechnen und TaPasCo. [PDF](https://moodle.informatik.tu-darmstadt.de/mod/resource/view.php?id=16072).
 
 ## Übungsblätter
 
