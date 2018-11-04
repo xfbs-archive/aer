@@ -38,9 +38,12 @@ Diese Veranstaltung wird aufgezeichnet. Die Übungsaufgaben sind freiwillig.
 ## Vorlesungen
 
 *   2018-10-17. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181017.avi)
-    *   Organistatorisches
-    *   Multiplier in Bluespec
-    *   Bluespec-Programme kompilieren und simulieren.
+*   2018-10-18. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181018.avi)
+*   2018-10-24. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181024.mp4)
+*   2018-10-25. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181025.mp4)
+*   2018-10-31. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181031.mp4)
+*   2018-11-01. [Aufzeichnung](http://www.esa.cs.tu-darmstadt.de/campus/AER-20181101.mp4)
+
 
 ## Folien
 
